@@ -17,12 +17,18 @@
     .h3{
       @apply text-[20px] xl:text-[19px] leading-[1.1] font-semibold;
     }
+    
     .text-outline {
       -webkit-text-stroke: 1px #FFF;
     }
   
     .text-outline-hover {
       -webkit-text-stroke: 1px #0F9;
+    }
+
+    .text-sobre-me{
+      font-size: 1.1rem;
+      line-height: 1.30rem;
     }
   }
   
