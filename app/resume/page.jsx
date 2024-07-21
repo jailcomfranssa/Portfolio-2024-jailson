@@ -31,7 +31,7 @@ const about = {
         },
         {
             fieldName: "Freelance",
-            fieldValue: "Disponível"
+            fieldValue: "<span style='color: #0f9; font-weight: bold; font-style: oblique'> Disponível </span>"
         },
         {
             fieldName: "Idioma",
@@ -205,7 +205,7 @@ const Resume = () => {
                                     {about.info.map((item, index) =>{
                                         return <li  key={index} className='flex items-center justify-center xl:justify-start gap-4 '>
                                             <span className='text-white/60'>{item.fieldName}</span>
-                                            <span className='text-sobre-me '>{item.fieldValue}</span>
+                                            <span className='text-sobre-me 'dangerouslySetInnerHTML={{ __html:item.fieldValue}} ></span>
                                         </li>
                                     })}
                                 </ul>
