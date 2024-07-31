@@ -9,6 +9,7 @@ import {
   FaNodeJs,
   FaGit,
   FaJenkins,
+  FaStarOfLife,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -82,11 +83,37 @@ const experience = {
       company: "Justiça Federal da Paraíba",
       position: "Desenvolvedor full stack",
       duration: "2019 - 2021",
+      atribuicoes: [
+        "Participação em projetos desde a concepção até a implementação e melhorias dos serviços oferecidos pela instituição.",
+        "Desenvolvimento de aplicações front-end utilizando Vue.js, JavaScript, HTML e CSS.",
+        "Desenvolvimento back-end com Node.js, Python e MySQL.",
+        "Utilização de Git para controle de versão.",
+        "Adoção de metodologias ágeis para gestão de projetos e colaboração.",
+      ],
+      summary:
+        "Essa experiência proporcionou conhecimentos valiosos sobre a aplicação prática dos princípios de programação e o uso de tecnologias relevantes.",
+      skill: [
+        "HTML","CSS","JavaScript","Node.js","Vue.js","SQL","GIT","Trello"
+      ]
     },
     {
       company: "Dock Tech",
       position: "Analista de Qualidade (Q/A)",
       duration: "2021 - 2023",
+      atribuicoes: [
+        "Desenvolvimento de teste automatizado em API REST e desenvolvimento de Api.",
+        "Testar, criar e desenvolver novas funcionalidades em projetos de automação.",
+        "Desenvolver casos de teste utilizando Java como principal linguagem de programação.",
+        "Utilizar ferramentas como Cucumber, TestNG, Rest Assured e Postman para automação de testes.",
+        "Gerenciar o controle de versão e colaboração de código com Git.",
+        "Utilizar MySQL para gerenciamento de banco de dados.",
+        "Adoção de metodologias ágeis para gestão de projetos e colaboração."
+      ],
+      summary:
+        "Nessa função, adquiri habilidades em testes de API, realizando análises minuciosas e garantindo a qualidade e eficiência das aplicações desenvolvidas.",
+      skill: [
+        "Java","Spring Boot","Cucumber","TestNG","Elaboração de testes","Automação de testes","SQL","GIT","Jira","Microsoft Azure",
+      ]
     },
   ],
 };
@@ -177,54 +204,54 @@ const Resume = () => {
                 </p>
                 <ScrollArea className="h-[300px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[25px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[350px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
+                    {experience.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-[350px] min-h-[60px] text-center lg:text-left">
+                          {item.position}
+                        </h3>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/60">{item.company}</p>
+                        </div>
 
-                          <Dialog>
-                            <DialogTrigger asChild>
-                              <Button variant="outline">Share</Button>
-                            </DialogTrigger>
-                            <DialogContent className="max-w-4xl">
-                              <DialogHeader>
-                                <DialogTitle>Share link</DialogTitle>
-                                <DialogDescription>
-                                  Anyone who has this link will be able to view
-                                  this.
-                                </DialogDescription>
-                              </DialogHeader>
-                              <div className="flex items-center space-x-2">
-                                <div className="grid flex-1 gap-2">
-                                  <Label htmlFor="link" className="sr-only">
-                                    Link
-                                  </Label>
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <Button variant="outline">Atribuições</Button>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-4xl">
+                            <DialogHeader>
+                              <DialogTitle>{item.company}</DialogTitle>
+                              <DialogDescription>
+                                {item.atribuicoes.map((atividade, idx) => (
+                                  <p key={idx} className="flex  gap-2 mb-4">
+                                    <span className="text-accent w-6 h-6">*</span>{atividade}
+                                </p>
+                                ))}
+                                <p className="flex gap-2"><span className="text-accent w-6 h-6">-</span>{item.summary}</p>
+                                <dir className="mb-6 mt-10 flex flex-wrap gap-2">
+                                  {item.skill.map((sk, index) => (
+                                    <Badge key={index} className="py-1 p-2 ">{sk}</Badge>
+                                  ))}
                                   
-                                </div>
+                                </dir>
                                 
-                              </div>
-                              <DialogFooter className="sm:justify-start">
-                                <DialogClose asChild>
-                                  <Button type="button" variant="outline">
-                                    Close
-                                  </Button>
-                                </DialogClose>
-                              </DialogFooter>
-                            </DialogContent>
-                          </Dialog>
-                        </li>
-                      );
-                    })}
+                              </DialogDescription>
+                            </DialogHeader>
+                            <DialogFooter className="sm:justify-start">
+                              <DialogClose asChild>
+                                <Button type="button" variant="outline">
+                                  Close
+                                </Button>
+                              </DialogClose>
+                            </DialogFooter>
+                          </DialogContent>
+                        </Dialog>
+                      </li>
+                    ))}
                   </ul>
                 </ScrollArea>
               </div>
