@@ -224,17 +224,17 @@ const Resume = () => {
                           </DialogTrigger>
                           <DialogContent className="max-w-4xl">
                             <DialogHeader>
-                              <DialogTitle>{item.company}</DialogTitle>
+                              <DialogTitle className="mb-5">{item.company}</DialogTitle>
                               <DialogDescription>
                                 {item.atribuicoes.map((atividade, idx) => (
-                                  <p key={idx} className="flex  gap-2 mb-4">
+                                  <p key={idx} className="flex  gap-2 mb-4 text-white/60">
                                     <span className="text-accent w-6 h-6">*</span>{atividade}
                                 </p>
                                 ))}
-                                <p className="flex gap-2"><span className="text-accent w-6 h-6">-</span>{item.summary}</p>
+                                <p className="flex gap-2 text-white/60"><span className="text-accent w-6 h-6">-</span>{item.summary}</p>
                                 <dir className="mb-6 mt-10 flex flex-wrap gap-2">
                                   {item.skill.map((sk, index) => (
-                                    <Badge key={index} className="py-1 p-2 ">{sk}</Badge>
+                                    <Badge key={index} className="py-1 p-2 text-md">{sk}</Badge>
                                   ))}
                                   
                                 </dir>
