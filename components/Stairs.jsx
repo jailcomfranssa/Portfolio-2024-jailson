@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const stairAnimation = {
     initial: {
@@ -36,7 +37,15 @@ const Stairs = () => {
                         }}
                         className="h-full w-full relative"
                     >
-                        <img src="/images/matrix.gif" alt="Animation" className="h-full w-full object-cover" />
+                        
+                        <Image
+                                src="/images/matrix.gif"
+                                alt="Animation"
+                                width={500} // Ajuste a largura conforme necessário
+                                height={500}
+                                className="h-full w-full object-cover"
+                                unoptimized
+                        />
                     </motion.div>
                 )
             })}

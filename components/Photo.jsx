@@ -19,6 +19,7 @@ const Photo = () => {
                     fill 
                     alt="programador" 
                     className="object-contain"
+                    unoptimized
                 />
             </motion.div>
             <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" 
