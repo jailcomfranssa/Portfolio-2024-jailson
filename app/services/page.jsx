@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { Description } from "@radix-ui/react-dialog";
+//import { Description } from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 import { BsArrowDownRight } from "react-icons/bs"
 
