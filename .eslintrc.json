@@ -14,7 +14,10 @@
     "sourceType": "module"
   },
   "rules": {
-    // Adicione suas regras personalizadas aqui
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/quotes": "off",
+    "quotes": ["off", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "no-useless-escape": "off"
   }
 }
 
