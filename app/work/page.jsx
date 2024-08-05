@@ -1,5 +1,5 @@
 "use client"
-import{motion, AnimatePresence} from "framer-motion"
+import{motion} from "framer-motion"
 import {Swiper, SwiperSlide} from "swiper/react"
 import "swiper/css"
 import {FaDesktop,FaGitSquare,FaPlay} from  "react-icons/fa"
