@@ -13,94 +13,74 @@ import WorkSliderBtns from "@/components/WorkSliderBtns"
 const projects =[
     {
         num: '01',
-        category: 'frontend-01',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'lista de Compras',
+        description:'Projeto Simples de Lista de Compras, com funcionalidades para adicionar itens à lista, removê-los, calcular a soma dos produtos e limpar toda a lista quando necessário.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/ista-de-compras.jpg",
+        live: "https://jailcomfranssa.github.io/javascript-lista_de_compras/",
+        github: "https://github.com/jailcomfranssa/javascript-lista_de_compras",
+        youtube: "https://www.youtube.com/watch?v=NceMjp7jC04",
     },
     {
         num: '02',
-        category: 'backend-02',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'restaurante de comidas típicas',
+        description:'Landing Page, de um restaurante de comidas típicas do meu estado a Paraíba, pagina simula um delivery de rede de restaurante. Com foco na usabilidade e na experiência do usuário, adotei uma abordagem centrada no cliente, garantindo que a página oferecesse uma navegação fluída e intuitiva. Também assegurei que o design fosse responsivo, proporcionando uma experiência consistente em uma variedade de dispositivos, desde desktops até dispositivos móveis.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/restaurante-regional.jpg",
+        live: "https://jailcomfranssa.github.io/html-Landing-Page-Restaurante-Regional/",
+        github: "https://github.com/jailcomfranssa/html-Landing-Page-Restaurante-Regional",
+        youtube: "https://www.youtube.com/watch?v=27lVclUxybI",
     },
     {
         num: '03',
-        category: 'fullstack-03',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'loja Pocket Funko',
+        description:'Landing Page, de uma loja Pocket Funko que simula a venda de produtos com tema de Star Wars. Com foco na usabilidade e na experiência do usuário, adotei uma abordagem centrada no cliente, garantindo que a página oferecesse uma navegação fluída e intuitiva. Também assegurei que o design fosse responsivo, proporcionando uma experiência consistente em uma variedade de dispositivos, desde desktops até dispositivos móveis.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/smartmockups_lzhoyamj.jpg",
+        live: "https://jailcomfranssa.github.io/html-Landing-Page-Loja-Pocket_Funkol/#home",
+        github: "https://github.com/jailcomfranssa/html-Landing-Page-Loja-Pocket_Funkol",
+        youtube: "https://www.youtube.com/watch?v=PGgzVqO57yg",
     },
     {
         num: '04',
-        category: 'frontend-04',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'Hotel',
+        description:'Desenvolvi uma Landing Page, aplicando conceitos fundamentais de desenvolvimento web. Isso inclui a implementação de responsividade da página, a utilização do modelo de layout Flexbox e a aplicação de boas práticas.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/hotel.jpg",
+        live: "https://jailcomfranssa.github.io/html-Landing-Page-Hotel/",
+        github: "https://github.com/jailcomfranssa/html-Landing-Page-Hotel",
+        youtube: "https://www.youtube.com/watch?v=INqvc_BYZfs",
     },
     {
         num: '05',
-        category: 'frontend-05',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'workshop',
+        description:'Simples projeto Landing Page. Através da utilização de HTML, garanti uma estrutura sólida e semântica para o conteúdo, enquanto o CSS foi aplicado para estilizar os elementos de forma atraente e intuitiva.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/smartmockups_lzhpnjnc.jpg",
+        live: "https://jailcomfranssa.github.io/html-Landing-Page-WORKSHOP/",
+        github: "https://github.com/jailcomfranssa/html-Landing-Page-WORKSHOP",
+        youtube: "https://www.youtube.com/watch?v=QcsIQvoc5Ww",
     },
     {
         num: '06',
-        category: 'frontend-06',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
+        category: 'frontend',
+        title: 'hamburgueria',
+        description:'Desenvolvi uma Landing Page, um projeto de uma Hamburgueria que incorpora os princípios de responsividade , juntamente com as melhores práticas de programação.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
+        image: "/work/smartmockups_lzhqpi5i.jpg",
+        live: "https://jailcomfranssa.github.io/html-Landing-Page-hamburgueria/",
+        github: "https://github.com/jailcomfranssa/html-Landing-Page-hamburgueria",
+        youtube: "https://www.youtube.com/watch?v=HSuTJd2HRSE",
     },
+    
+    
     {
         num: '07',
-        category: 'frontend-07',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
-        stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
-    },
-    {
-        num: '08',
-        category: 'frontend-08',
-        title: 'project 01',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
-        stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
-        image: "/work/pg-construcao.png",
-        live: "",
-        github: "",
-        youtube: "",
-    },
-    {
-        num: '09',
         category: 'frontend',
         title: 'project 01',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
@@ -147,7 +127,7 @@ const Work = () => {
                         </div>
                         {/**project category */}
                         <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                            {project.category} Projeto
+                            {project.category}:{project.title}
                         </h2>
                         {/*project description*/}
                         <p className="text-white/60">{project.description}</p>
@@ -167,7 +147,7 @@ const Work = () => {
                         {/* button  FaDesktop,FaGitSquare,FaPlay*/}
                         <div className="flex items-center gap-4">
                             {/** site project  button */}
-                            <Link href={project.live}>
+                            <Link href={project.live} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -181,7 +161,7 @@ const Work = () => {
                             </Link>
 
                             {/**Github project button */}
-                            <Link href={project.github}>
+                            <Link href={project.github} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -195,7 +175,7 @@ const Work = () => {
                             </Link>
 
                             {/**youtube project button */}
-                            <Link href={project.youtube}>
+                            <Link href={project.youtube} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
