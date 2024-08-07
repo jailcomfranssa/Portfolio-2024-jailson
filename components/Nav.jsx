@@ -23,10 +23,7 @@ const links = [
         name: "Projetos",
         path: "/work"
     },
-    {
-        name: "Contato", 
-        path: "/contact"
-    },
+    
 ]
 
 const NavDesktop = () => {
