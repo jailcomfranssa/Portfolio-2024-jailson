@@ -62,9 +62,10 @@ const Contact = () => {
                                 <SelectContent className="flex flex-col gap-4">
                                     <SelectGroup>
                                         <SelectLabel>Selecione um Serviço</SelectLabel>
-                                        <SelectItem value="service1">Web Development</SelectItem>
-                                        <SelectItem value="service2">UI/UX Design</SelectItem>
-                                        <SelectItem value="service3">Logo Design</SelectItem>
+                                        <SelectItem value="service1">Front-end Development</SelectItem>
+                                        <SelectItem value="service2">Back-end Development</SelectItem>
+                                        <SelectItem value="service3">Full Stack Development</SelectItem>
+                                        <SelectItem value="service4">QA Test Engineer</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
