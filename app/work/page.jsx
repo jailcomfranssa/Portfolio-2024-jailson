@@ -14,6 +14,18 @@ const projects =[
     {
         num: '01',
         category: 'frontend',
+        title: 'Education website',
+        description:'O projeto combina a robustez do ReactJS com a flexibilidade do Tailwind para criar uma interface moderna, intuitiva e totalmente adaptável a diferentes dispositivos. Além disso, o Framer Motion foi integrado para proporcionar uma experiência de usuário envolvente e fluida, com animações interativas e transições suaves. ',
+        stack:[{name:"ReactJS"},{name:"Tailwind"},{name:"Framer Motion"}],
+        image: "/work/EducationWebsite.jpg",
+        live: "https://react-js-education-website-jak4.vercel.app/#",
+        github: "https://github.com/jailcomfranssa/ReactJS-Education-website",
+        youtube: "https://www.youtube.com/watch?v=TeYT5DriOLE",
+    },
+
+    {
+        num: '02',
+        category: 'frontend',
         title: 'lista de Compras',
         description:'Projeto Simples de Lista de Compras, com funcionalidades para adicionar itens à lista, removê-los, calcular a soma dos produtos e limpar toda a lista quando necessário.',
         stack:[{name:"Html 5"},{name:"Css 3"},{name:"Javascript"}],
@@ -23,7 +35,7 @@ const projects =[
         youtube: "https://www.youtube.com/watch?v=NceMjp7jC04",
     },
     {
-        num: '02',
+        num: '03',
         category: 'frontend',
         title: 'restaurante de comidas típicas',
         description:'Landing Page, de um restaurante de comidas típicas do meu estado a Paraíba, pagina simula um delivery de rede de restaurante. Com foco na usabilidade e na experiência do usuário, adotei uma abordagem centrada no cliente, garantindo que a página oferecesse uma navegação fluída e intuitiva. Também assegurei que o design fosse responsivo, proporcionando uma experiência consistente em uma variedade de dispositivos, desde desktops até dispositivos móveis.',
@@ -34,7 +46,7 @@ const projects =[
         youtube: "https://www.youtube.com/watch?v=27lVclUxybI",
     },
     {
-        num: '03',
+        num: '04',
         category: 'frontend',
         title: 'loja Pocket Funko',
         description:'Landing Page, de uma loja Pocket Funko que simula a venda de produtos com tema de Star Wars. Com foco na usabilidade e na experiência do usuário, adotei uma abordagem centrada no cliente, garantindo que a página oferecesse uma navegação fluída e intuitiva. Também assegurei que o design fosse responsivo, proporcionando uma experiência consistente em uma variedade de dispositivos, desde desktops até dispositivos móveis.',
@@ -45,7 +57,7 @@ const projects =[
         youtube: "https://www.youtube.com/watch?v=PGgzVqO57yg",
     },
     {
-        num: '04',
+        num: '05',
         category: 'frontend',
         title: 'Hotel',
         description:'Desenvolvi uma Landing Page, aplicando conceitos fundamentais de desenvolvimento web. Isso inclui a implementação de responsividade da página, a utilização do modelo de layout Flexbox e a aplicação de boas práticas.',
@@ -56,7 +68,7 @@ const projects =[
         youtube: "https://www.youtube.com/watch?v=INqvc_BYZfs",
     },
     {
-        num: '05',
+        num: '06',
         category: 'frontend',
         title: 'workshop',
         description:'Simples projeto Landing Page. Através da utilização de HTML, garanti uma estrutura sólida e semântica para o conteúdo, enquanto o CSS foi aplicado para estilizar os elementos de forma atraente e intuitiva.',
@@ -67,7 +79,7 @@ const projects =[
         youtube: "https://www.youtube.com/watch?v=QcsIQvoc5Ww",
     },
     {
-        num: '06',
+        num: '07',
         category: 'frontend',
         title: 'hamburgueria',
         description:'Desenvolvi uma Landing Page, um projeto de uma Hamburgueria que incorpora os princípios de responsividade , juntamente com as melhores práticas de programação.',
@@ -80,7 +92,7 @@ const projects =[
     
     
     {
-        num: '07',
+        num: '08',
         category: 'frontend',
         title: 'project 01',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo inventore. Quas itaque fugiat dolores.',
