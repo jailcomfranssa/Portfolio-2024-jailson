@@ -9,7 +9,6 @@ import {
   FaNodeJs,
   FaGit,
   FaJenkins,
-  
 } from "react-icons/fa";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -34,7 +33,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-
 
 /** About dados */
 const about = {
@@ -92,8 +90,15 @@ const experience = {
       summary:
         "Essa experiência proporcionou conhecimentos valiosos sobre a aplicação prática dos princípios de programação e o uso de tecnologias relevantes.",
       skill: [
-        "HTML","CSS","JavaScript","Node.js","Vue.js","SQL","GIT","Trello"
-      ]
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Vue.js",
+        "SQL",
+        "GIT",
+        "Trello",
+      ],
     },
     {
       company: "Dock Tech",
@@ -106,13 +111,22 @@ const experience = {
         "Utilizar ferramentas como Cucumber, TestNG, Rest Assured e Postman para automação de testes.",
         "Gerenciar o controle de versão e colaboração de código com Git.",
         "Utilizar MySQL para gerenciamento de banco de dados.",
-        "Adoção de metodologias ágeis para gestão de projetos e colaboração."
+        "Adoção de metodologias ágeis para gestão de projetos e colaboração.",
       ],
       summary:
         "Nessa função, adquiri habilidades em testes de API, realizando análises minuciosas e garantindo a qualidade e eficiência das aplicações desenvolvidas.",
       skill: [
-        "Java","Spring Boot","Cucumber","TestNG","Elaboração de testes","Automação de testes","SQL","GIT","Jira","Microsoft Azure",
-      ]
+        "Java",
+        "Spring Boot",
+        "Cucumber",
+        "TestNG",
+        "Elaboração de testes",
+        "Automação de testes",
+        "SQL",
+        "GIT",
+        "Jira",
+        "Microsoft Azure",
+      ],
     },
   ],
 };
@@ -177,9 +191,11 @@ const skills = {
 const Resume = () => {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1, transition:{ delay: 2.4, duration: 0.5, ease: "easeIn" },
-}}
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.5, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
@@ -221,26 +237,40 @@ const Resume = () => {
                           <DialogTrigger asChild>
                             <Button variant="outline">Atribuições</Button>
                           </DialogTrigger>
-                          <DialogContent className="max-w-4xl">
+                          <DialogContent className="max-w-4xl w-full sm:max-w-full overflow-y-auto max-h-[90vh] p-4 sm:p-6">
                             <DialogHeader>
-                              <DialogTitle className="mb-5">{item.company}</DialogTitle>
+                              <DialogTitle className="mb-4 sm:mb-5">
+                                {item.company}
+                              </DialogTitle>
                               <DialogDescription>
                                 {item.atribuicoes.map((atividade, idx) => (
-                                  <p key={idx} className="flex  gap-2 mb-4 text-white/60">
-                                    <span className="text-accent w-6 h-6">*</span>{atividade}
-                                </p>
+                                  <p
+                                    key={idx}
+                                    className="flex gap-2 mb-4 text-white/60"
+                                  >
+                                    <span className="text-accent w-6 h-6">
+                                      *
+                                    </span>
+                                    {atividade}
+                                  </p>
                                 ))}
-                                <p className="flex gap-2 text-white/60"><span className="text-accent w-6 h-6">-</span>{item.summary}</p>
-                                <dir className="mb-6 mt-10 flex flex-wrap gap-2">
+                                <p className="flex gap-2 text-white/60">
+                                  <span className="text-accent w-6 h-6">-</span>
+                                  {item.summary}
+                                </p>
+                                <div className="mb-6 mt-10 flex flex-wrap gap-2">
                                   {item.skill.map((sk, index) => (
-                                    <Badge key={index} className="py-1 p-2 text-md">{sk}</Badge>
+                                    <Badge
+                                      key={index}
+                                      className="py-1 p-2 text-md"
+                                    >
+                                      {sk}
+                                    </Badge>
                                   ))}
-                                  
-                                </dir>
-                                
+                                </div>
                               </DialogDescription>
                             </DialogHeader>
-                            <DialogFooter className="sm:justify-start">
+                            <DialogFooter className="flex justify-end p-4 sm:p-6">
                               <DialogClose asChild>
                                 <Button type="button" variant="outline">
                                   Close
