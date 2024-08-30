@@ -138,7 +138,7 @@ const Work = () => {
                             {formatNumber(projects.length, 2)}
                         </div>
                         {/**project category */}
-                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize break-keep break-words whitespace-normal max-w-full">
                             {project.category}:{project.title}
                         </h2>
                         {/*project description*/}
