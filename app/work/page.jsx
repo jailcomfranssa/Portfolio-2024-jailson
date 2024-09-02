@@ -125,7 +125,7 @@ const Work = () => {
         <motion.section
             initial={{opacity: 0}}
             animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: 'easeIn'}}}
-            className="min-h-screen flex flex-wrap flex-col justify-content py-12 xl:px-0 sm:overflow-y-auto"
+            className="min-h-screen flex flex-wrap flex-col justify-content py-12 xl:px-0 overflow-y-auto sm:overflow-y-visible"
         >
         <div className="container mx-auto">
             <div className="flex flex-col xl:flex-row xl:gap-[30px]">
